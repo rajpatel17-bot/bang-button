@@ -47,10 +47,10 @@ $ yarn add awesome-react-components
 | suspense  |  boolean  |    ❌    |  false   | To lazy load the component or not                                                     |
 | fallback  | ReactNode |    ❌    | Fragment | Fallback needed to show unless the component is loaded fully for suspensed components |
 
-> **Note**
->
-> -  The `If` component takes maximum two childrens.
-> -  If you pass more than that, then it will throw an error like this `component takes max two childrens`.
+### Working
+
+-  If you pass only one children and condition is false then it will return null otherwise the childen will be rendered.
+-  If you pass two or more childs and condition is false then it will return all of the children except first child otherwise the first child will be rendered.
 
 ### Example
 
@@ -73,23 +73,25 @@ export default function YourComponent() {
             <h1>this will render.</h1>
          </If>
 
-         {/* Passing only two children and a condition prop */}
+         {/* Passing more than one children and a truthy condition prop */}
          <If codition={true}>
             <h1>this is will render</h1>
             <h2>this is will not render. As condition it truthy, the first children will render</h2>
          </If>
 
-         {/* Passing only two children and a condition prop */}
+         {/* Passing more than one children and a falsy condition prop */}
          <If codition={falsy}>
             <h1>this is will not render</h1>
             <h2>this is will render. As condition it falsy, then second children will render</h2>
+            <h2>this is will also render</h2>
          </If>
 
          {/* Passing two childrens, condition and suspense prop */}
          <If codition={false} suspense>
-            {/* this component code file will only download when the condition will be true */}
+            {/* this component code file will only download when the condition will be true.
+             In this case, codition is falsy then it will not be downloaded. */}
             <SomeLazyComponent />
-            <h2>this is will not render</h2>
+            <h2>this is will render</h2>
          </If>
       </div>
    );
