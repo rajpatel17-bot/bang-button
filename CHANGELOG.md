@@ -1,5 +1,12 @@
 # bang-button
 
+## 0.11.0
+
+### Minor Changes
+
+-  1696be0: Changes for pull req
+-  821dfe7: doc: update
+
 ## 0.10.0
 
 ### Minor Changes
