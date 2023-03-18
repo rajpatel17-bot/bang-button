@@ -10,7 +10,7 @@
 
 # awesome-react-components
 
-An Awesome React Library for **Utility** **Components** and **Hooks**.
+An Awesome React Library for **Utility** **Components** and **Hooks**
 
 ## Installation
 
