@@ -1,5 +1,11 @@
 # bang-button
 
+## 0.10.0
+
+### Minor Changes
+
+-  a4c8b90: feat: Add Then and Else utility component
+
 ## 0.9.0
 
 ### Minor Changes
