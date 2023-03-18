@@ -35,10 +35,10 @@ $ yarn add awesome-react-components
 ## Components
 
 -  [If](#if)
+-  [Then](#then)
+-  [Else](#else)
 
-## Details
-
-### If
+## If
 
 | Prop      |   Type    | Required | Default  | Description                                                                           |
 | --------- | :-------: | :------: | :------: | ------------------------------------------------------------------------------------- |
@@ -92,6 +92,65 @@ export default function YourComponent() {
              In this case, codition is falsy then it will not be downloaded. */}
             <SomeLazyComponent />
             <h2>this is will render</h2>
+         </If>
+      </div>
+   );
+}
+```
+
+## Then
+
+| Prop     |   Type    | Required | Default | Description                 |
+| -------- | :-------: | :------: | :-----: | --------------------------- |
+| children | ReactNode |    ❌    |  null   | Renders the passed children |
+
+### Example
+
+```tsx
+import { lazy } from 'react';
+import { If, Then } from 'awesome-react-components';
+
+export default function YourComponent() {
+   return (
+      <div>
+         <If codition={true}>
+            <Then>
+               <h1>this will render.</h1>
+            </Then>
+         </If>
+      </div>
+   );
+}
+```
+
+## Else
+
+| Prop     |   Type    | Required | Default | Description                 |
+| -------- | :-------: | :------: | :-----: | --------------------------- |
+| children | ReactNode |    ❌    |  null   | Renders the passed children |
+
+### Example
+
+```tsx
+import { lazy } from 'react';
+import { If, Then, Else } from 'awesome-react-components';
+
+export default function YourComponent() {
+   return (
+      <div>
+         <If codition={true}>
+            <Then>
+               <h1>this will render.</h1>
+            </Then>
+         </If>
+
+         <If codition={true}>
+            <Then>
+               <h1>this will render.</h1>
+            </Then>
+            <Else>
+               <h1>this will not render.</h1>
+            </Else>
          </If>
       </div>
    );
