@@ -1,0 +1,8 @@
+{
+  "mode": "pre",
+  "tag": "1.0.0-beta.0",
+  "initialVersions": {
+    "bang-button": "0.11.0"
+  },
+  "changesets": []
+}
