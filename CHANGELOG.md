@@ -1,5 +1,11 @@
 # bang-button
 
+## 0.13.0
+
+### Minor Changes
+
+-  79260d2: Switch to normal version
+
 ## 0.12.0
 
 ### Minor Changes
