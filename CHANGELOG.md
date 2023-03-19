@@ -1,11 +1,5 @@
 # bang-button
 
-## 0.12.0
-
-### Minor Changes
-
--  29ea220: This is summary for first prelease
-
 ## 0.11.0
 
 ### Minor Changes
