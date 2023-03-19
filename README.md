@@ -107,7 +107,6 @@ export default function YourComponent() {
 ### Example
 
 ```tsx
-import { lazy } from 'react';
 import { If, Then } from 'awesome-react-components';
 
 export default function YourComponent() {
