@@ -1,6 +1,6 @@
 {
   "mode": "pre",
-  "tag": "0.11.0-next.0",
+  "tag": "0.11.0-next-0",
   "initialVersions": {
     "bang-button": "0.11.0"
   },
